@@ -1,0 +1,16 @@
+{
+  "name": "multiples-sum",
+  "version": "1.0.0",
+  "description": "Sum of multiples of 3 or 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
