@@ -15,6 +15,7 @@ function findEvenFibSum(limit) {
     current = next;
   }
 
+  console.log("Sum of even Fibonacci numbers:", sum);
   return sum;
 }
 
