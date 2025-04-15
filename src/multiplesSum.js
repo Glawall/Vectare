@@ -7,6 +7,7 @@ function findSum(limit) {
     }
   }
 
+  console.log("Sum of multiples:", sum);
   return sum;
 }
 
