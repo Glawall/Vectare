@@ -22,17 +22,22 @@ function findSmallestMultipleSimple(limit) {
   }
 }
 
-// Second version - checks divisibility more efficiently
+// Second version - using GCD to find LCM
+function gcd(a, b) {
+  while (b) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}
+
 function findSmallestMultiple(limit) {
   if (limit <= 0) return 0;
 
   let result = 1;
-  // Start from 2 since 1 doesn't affect the result
   for (let i = 2; i <= limit; i++) {
-    // If result isn't divisible by i, multiply result by smallest number needed
-    if (result % i !== 0) {
-      result *= i;
-    }
+    result = (result * i) / gcd(result, i);
   }
 
   console.log("Smallest multiple second method:", result);
